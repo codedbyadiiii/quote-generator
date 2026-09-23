@@ -16,15 +16,15 @@ A clean, modern web application built with Python, Flask, HTML, and CSS that ser
 ```text
 quote-generator/
 │
-├── app.py               # The main Flask application and routing logic
-├── .gitignore           # Tells Git which files to ignore (e.g., __pycache__)
-├── README.md            # Project documentation
+├── app.py               
+├── .gitignore          
+├── README.md            
 │
 ├── templates/           
-│   └── index.html       # The main HTML layout and form
+│   └── index.html       
 │
 └── static/
-    └── style.css        # All CSS styling and UI design
+    └── style.css        
 ```
 
 ## 💻 How to Run Locally
