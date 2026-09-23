@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Inspiration</h1>
+        
+        <!-- Random Quote Display -->
+        <div class="quote-box">
+            <p class="quote">"{{ quote.text }}"</p>
+            <p class="author">- {{ quote.author }}</p>
+        </div>
+        <a href="/" class="btn">Get Another Quote</a>
+
+        <hr>
+
+        <!-- Form to Add a New Quote -->
+        <h3>Add Your Own</h3>
+        <form method="POST" action="/">
+            <input type="text" name="quote_text" placeholder="Enter a quote..." required>
+            <input type="text" name="author_name" placeholder="Author name..." required>
+            <button type="submit" class="btn submit-btn">Save Quote</button>
+        </form>
+    </div>
+</body>
+</html>
